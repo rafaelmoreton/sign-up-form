@@ -4,7 +4,10 @@ body {
 }
 
 .image-sidebar {
-    background-color: aquamarine;
+    background-image: url("lighthouse.jpg");
+    background-size: auto 160%;
+    background-position: center;
+    background-color: rgb(126, 205, 209);
     width: 35vw;
 }
 
