@@ -1,6 +1,28 @@
+:root {
+    --main-color: rgb(253, 255, 182);
+    --fore-color: rgb(251, 250, 235);
+    --shadow-color: rgb(190, 192, 138);
+    --interaction-color: rgb(46, 55, 63);
+}
+
 body {
     display: flex;
     height: 100vh;
+}
+
+form {
+    background-color: var(--fore-color);
+    box-shadow: 0 5px 5px var(--shadow-color);
+}
+
+button {
+    background-color: var(--interaction-color);
+    color: var(--fore-color);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
 }
 
 .image-sidebar {
@@ -12,6 +34,6 @@ body {
 }
 
 .form-content {
-    background-color: violet;
+    background-color: var(--main-color);
     width: 65vw;
 }
