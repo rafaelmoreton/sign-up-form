@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.image-sidebar {
+    background-color: aquamarine;
+    width: 35vw;
+}
+
+.form-content {
+    background-color: violet;
+    width: 65vw;
+}
