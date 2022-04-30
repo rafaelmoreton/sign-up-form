@@ -33,6 +33,21 @@ fieldset {
     width: 35vw;
 }
 
+.image-sidebar > div {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.371);
+    color: var(--main-color);
+    top: 200px;
+}
+
+.image-sidebar > div > p {
+    margin: 0;
+    text-align: center;
+    font-size: min(5rem, 6vw);
+    font-weight: 600;
+    transform: scaleX(0.7);
+}
+
 .form-content {
     background-color: var(--main-color);
     width: 65vw;
