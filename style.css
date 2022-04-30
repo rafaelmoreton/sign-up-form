@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 :root {
     --main-color: rgb(253, 255, 182);
     --fore-color: rgb(251, 250, 235);
@@ -8,6 +10,7 @@
 body {
     display: flex;
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* #################  IMAGE  ################# */
