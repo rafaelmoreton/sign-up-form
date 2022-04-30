@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 :root {
     --main-color: rgb(253, 255, 182);
@@ -54,7 +54,7 @@ form {
     padding: 20px 0 20px var(--margin-left);
     margin-top: 50px;
     background-color: var(--fore-color);
-    box-shadow: 0 5px 5px var(--shadow-color);
+    box-shadow: 5px 5px 5px var(--shadow-color);
 }
 
 form > p {
@@ -78,6 +78,17 @@ fieldset > div {
 
 button {
     margin-left: var(--margin-left);
+    margin-top: 4vh;
+    padding: 0.8em 3em;
+    border: none;
+    border-radius: 5px;
     background-color: var(--interaction-color);
     color: var(--fore-color);
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px var(--shadow-color);;
+}
+
+button:hover {
+    cursor: pointer;
 }
