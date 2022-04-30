@@ -10,20 +10,7 @@ body {
     height: 100vh;
 }
 
-form {
-    background-color: var(--fore-color);
-    box-shadow: 0 5px 5px var(--shadow-color);
-}
-
-button {
-    background-color: var(--interaction-color);
-    color: var(--fore-color);
-}
-
-fieldset {
-    border: none;
-    margin: 0;
-}
+/* #################  IMAGE  ################# */
 
 .image-sidebar {
     background-image: url("lighthouse.jpg");
@@ -41,14 +28,53 @@ fieldset {
 }
 
 .image-sidebar > div > p {
-    margin: 0;
+    margin: 0px;
     text-align: center;
     font-size: min(5rem, 6vw);
     font-weight: 600;
     transform: scaleX(0.7);
 }
 
+/* #################  FORM  ################# */
+
 .form-content {
+    --margin-left: 3vw;
     background-color: var(--main-color);
     width: 65vw;
+}
+
+.form-content > p {
+    margin-left: var(--margin-left);
+}
+
+form {
+    padding: 20px 0 20px var(--margin-left);
+    margin-top: 50px;
+    background-color: var(--fore-color);
+    box-shadow: 0 5px 5px var(--shadow-color);
+}
+
+form > p {
+    font-size: 2em;
+    margin: 0;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    margin: 15px 0;
+    padding: 0;
+    margin-right: 20vw;
+    gap: 4vw;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-left: var(--margin-left);
+    background-color: var(--interaction-color);
+    color: var(--fore-color);
 }
