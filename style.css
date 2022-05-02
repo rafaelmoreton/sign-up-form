@@ -43,7 +43,6 @@ body {
 .form-content {
     --margin-left: 3vw;
     background-color: var(--main-color);
-    width: 65vw;
 }
 
 .form-content > p {
@@ -67,12 +66,16 @@ fieldset {
     border: none;
     margin: 15px 0;
     padding: 0;
-    margin-right: 20vw;
-    gap: 4vw;
+    padding-right: 5vw;
+    gap: 3vw;
+    margin-right: var(--margin-left);
 }
 
 fieldset > div {
     display: flex;
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 300px;
     flex-direction: column;
 }
 
@@ -91,6 +94,7 @@ input {
     padding: 0.3em 0.5em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.2em;
+    width: 90%;
 }
 
 input:focus {
