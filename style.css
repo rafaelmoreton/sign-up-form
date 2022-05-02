@@ -73,8 +73,8 @@ fieldset {
 
 fieldset > div {
     display: flex;
-    flex: 1 1 200px;
-    min-width: 200px;
+    flex: 1 1 15vw;
+    min-width: 15vw;
     max-width: 300px;
     flex-direction: column;
 }
