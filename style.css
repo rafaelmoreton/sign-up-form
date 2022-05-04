@@ -195,3 +195,14 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+.form-content a {
+    color: var(--interaction-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-content p:last-child {
+    margin-top: 20px;
+    line-height: 28px;
+}
