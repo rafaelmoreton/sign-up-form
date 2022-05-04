@@ -98,6 +98,15 @@ label {
     margin-bottom: 0.1em;
 }
 
+.required::after {
+    content: "*";
+    font-size: 2em;
+    line-height: 0;
+    color: red;
+    position: relative;
+    top: 7px;
+}
+
 input {
     border-radius: 5px;
     border: 1px solid rgb(194, 193, 193);
@@ -109,6 +118,28 @@ input {
 
 input:focus {
     box-shadow: 5px 5px 5px var(--shadow-color);
+}
+
+input:valid:not(:placeholder-shown) {
+    background-image: url(check.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+
+input:invalid:not(:placeholder-shown) {
+    background-image: url(error.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #ff0000;
+    background-image: url(error.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 98%;
 }
 
 /* Chrome, Safari, Edge, Opera */
