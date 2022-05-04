@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
 :root {
     --main-color: rgb(253, 255, 182);
@@ -24,17 +24,24 @@ body {
 }
 
 .image-sidebar > div {
+    display: flex;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.371);
+    background-color: rgba(0, 0, 0, 0.471);
+    align-items: center;
     color: var(--main-color);
     top: 200px;
 }
 
+#logo {
+    position: relative;
+    left: 3vw;
+    width: 5vw;
+}
+
 .image-sidebar > div > p {
     margin: 0px;
-    text-align: center;
     font-size: min(5rem, 6vw);
-    font-weight: 600;
+    font-weight: 500;
     transform: scaleX(0.7);
 }
 
