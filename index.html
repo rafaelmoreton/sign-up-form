@@ -9,43 +9,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="image-sidebar">
-        <div id="title"><img id="logo" src="lightbulb.svg" alt=""><p>Lighthouse</p></div>
-        <div id="photo-author">Photo by <a href="https://unsplash.com/@alegi__">Alexandros Giannakakis</a> on <a href="https://unsplash.com/photos/ZAzmiGuR6lQ">Unplash</a></div>
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <img class="sidebar-logo" src="lightbulb.svg" alt="">
+            <p class="sidebar-title-text">Lighthouse</p>
+        </div>
+        <div class="sidebar-photo-author">
+            Photo by <a class="sidebar-link" href="https://unsplash.com/@alegi__">Alexandros Giannakakis</a> on <a class="sidebar-link" href="https://unsplash.com/photos/ZAzmiGuR6lQ">Unplash</a>
+        </div>
     </div>
     
     <div class="form-content">
-        <p>Everyday millions of ideas sprout in human minds only to be soon lost on their sea of thoughts. Some of these ideas surely deserve a safe haven, somewhere they can be nurtured and develop.</p>
+        <p class="form-content-intro">Everyday millions of ideas sprout in human minds only to be soon lost on their sea of thoughts. Some of these ideas surely deserve a safe haven, somewhere they can be nurtured and develop.</p>
 
-        <p>This is a fake form. Do not input real data</p>
-        <form id="personal-info" action="http://httpbin.org/post" method="post">
-            <p>Become a beacon for great ideas!</p>
+        <p class="form-content-intro">This is a fake form. Do not input real data</p>
+        <form class="form" action="http://httpbin.org/post" method="post">
+            <p class="form-action-call">Become a beacon for great ideas!</p>
             <fieldset>
-                <div>
+                <div class="input-group">
                     <label class="required" for="first-name">First Name</label>
                     <input type="text" id="first-name" name="first-name" required placeholder=" " pattern="[a-zA-Z]*">
                 </div>
-                <div>
+                <div class="input-group">
                     <label class="required" for="last-name">Last Name</label>
                     <input type="text" id="last-name" name="last-name" required placeholder=" " pattern="[a-zA-Z]*">
                 </div>
             </fieldset>
             <fieldset>
-                <div>
+                <div class="input-group">
                     <label class="required" for="email">Email</label>
                     <input type="email" id="email" name="email" required placeholder=" ">
                 </div>
-                <div>
+                <div class="input-group">
                     <label for="phone">Phone Number</label>
                     <input type="number" id="phone" name="phone" placeholder=" ">
                 </div>
             </fieldset>
             <fieldset>
-                <div>
+                <div class="input-group">
                     <label class="required" for="password">Password</label>
                     <input type="password" id="password" name="password" required placeholder=" " minlength="6">
                 </div>
-                <div>
+                <div class="input-group">
                     <label class="required" for="confirm-password">Confirm Password</label>
                     <input type="password" id="confirm-password"
                         name="confirm-password" required placeholder=" " minlength="6">
@@ -53,7 +58,7 @@
             </fieldset>
         </form>
         <button form="personal-info" type="submit">Create Account</button>
-        <p id="login">Already have an account? <a href="">Log in</a></p>
+        <p class="form-content-login">Already have an account? <a class="form-content-link" href="">Log in</a></p>
     </div>
 </body>
 </html>
